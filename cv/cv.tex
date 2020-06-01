@@ -2,8 +2,20 @@
 
 \usepackage[margin=1in]{geometry}
 \usepackage{array}
+\usepackage{titlesec}
 
 \setlength{\parindent}{0pt}
+
+\titlespacing*{\section}
+    {0pt}{5ex}{0pt}
+
+\titlespacing*{\subsection}
+    {0pt}{0pt}{1ex}
+
+\newcommand{\horizontalLine}{%
+    \rule{\linewidth}{0.4pt}
+    \vspace{1ex}
+}
 
 \begin{document}
     \begin{center}
@@ -19,13 +31,13 @@
             & T2L 1V5 & \textbf{Website} & jasonn.dev \\
             \textbf{Phone} & (587) 890-5250 \\
             \textbf{Email} & work@jasonn.dev \\
-            \\
         \end{tabular}
     }
 
-    \rule{\linewidth}{0.4pt}
-
     \section*{Skills Summary}
+
+        \horizontalLine
+
         \subsection*{Full-stack development}
 
         \begin{itemize}
@@ -93,6 +105,9 @@
         \end{itemize}
 
     \section*{Work Experience}
+
+        \horizontalLine
+
         \begin{tabular}{p{0.2\linewidth} p{0.7\linewidth}} 
             \textbf{2020/04 - Present} & \large\textbf{Freelance} \\
             & Primarily through Freelancer.com \\
@@ -103,6 +118,9 @@
         \end{tabular}
 
     \section*{Education}
+
+        \horizontalLine
+
         \begin{tabular}{p{0.2\linewidth} p{0.7\linewidth}} 
             \textbf{2017/09 - 2020/06} & \large\textbf{Alberta High School Diploma} \\
             & Sir Winston Churchill High School, Calgary, AB \\
@@ -113,6 +131,9 @@
         \end{tabular}
 
     \section*{Volunteering}
+
+        \horizontalLine
+
         \begin{tabular}{p{0.2\linewidth} p{0.7\linewidth}} 
             \textbf{2018/02 - 2020/02} & \large\textbf{Volunteer Churchill} \\
             & Sir Winston Churchill High School, Calgary, AB \\
@@ -123,6 +144,9 @@
         \end{tabular}
 
     \section*{Extra Curriculars}
+
+        \horizontalLine
+
         \begin{tabular}{p{0.2\linewidth} p{0.7\linewidth}} 
             \textbf{} & \large\textbf{} \\
             & \\
