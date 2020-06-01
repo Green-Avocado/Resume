@@ -1,16 +1,19 @@
 \documentclass[letterpaper]{article}
 
 \usepackage[margin=1in]{geometry}
+
 \usepackage{array}
+
 \usepackage{titlesec}
+    \titlespacing*{\section}
+        {0pt}{5ex}{0pt}
+
+    \titlespacing*{\subsection}
+        {0pt}{0pt}{1ex}
+
+\usepackage{enumitem}
 
 \setlength{\parindent}{0pt}
-
-\titlespacing*{\section}
-    {0pt}{5ex}{0pt}
-
-\titlespacing*{\subsection}
-    {0pt}{0pt}{1ex}
 
 \newcommand{\horizontalLine}{%
     \rule{\linewidth}{0.4pt}
@@ -40,7 +43,7 @@
 
         \subsection*{Full-stack development}
 
-        \begin{itemize}
+        \begin{itemize}[itemsep = 0pt]
             \item HTML
             \item CSS
             \item JavaScript
@@ -51,7 +54,7 @@
 
         \subsection*{Software development and scripting}
 
-        \begin{itemize}
+        \begin{itemize}[itemsep = 0pt]
             \item C
             \item C++
             \item C\#
@@ -61,7 +64,7 @@
 
         \subsection*{Technical writing}
 
-        \begin{itemize}
+        \begin{itemize}[itemsep = 0pt]
             \item LaTeX
             \item Microsoft Word/Libre Office
             \item Google Drive
@@ -70,26 +73,26 @@
         \subsection*{Debugging tools}
         Experience using tools to effectively debug programs compiled for x86 and x64 architecture.
 
-        \begin{itemize}
+        \begin{itemize}[itemsep = 0pt]
             \item GDB
         \end{itemize}
 
         \subsection*{Version control}
 
-        \begin{itemize}
+        \begin{itemize}[itemsep = 0pt]
             \item Git
         \end{itemize}
 
         \subsection*{Linux}
 
-        \begin{itemize}
+        \begin{itemize}[itemsep = 0pt]
             \item Debian and derivatives
             \item Arch Linux and derivatives
         \end{itemize}
 
         \subsection*{Windows}
 
-        \begin{itemize}
+        \begin{itemize}[itemsep = 0pt]
             \item Windows 10
             \item Windows 7
         \end{itemize}
@@ -97,7 +100,7 @@
         \subsection*{Text editors, compilers, and IDEs}
         Well versed in a variety of tools used to write and compile programs.
 
-        \begin{itemize}
+        \begin{itemize}[itemsep = 0pt]
             \item Visual Studio
             \item Notepad++
             \item Vim
