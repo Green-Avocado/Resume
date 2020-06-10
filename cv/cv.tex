@@ -2,6 +2,8 @@
 
 \usepackage[margin=1in]{geometry}
 
+\usepackage{graphicx}
+
 \usepackage{array}
 
 \usepackage{titlesec}
@@ -14,20 +16,22 @@
 \setlength{\parindent}{0pt}
 
 \newcommand{\horizontalLine}{%
-    \rule{\linewidth}{0.2pt}
+    \rule{\textwidth}{0.2pt}
     \vspace{1ex}
 }
 
 \begin{document}
-    {\Huge
-    \textbf{Jason Ngo}}
+    \begin{tabular}{p{0.5\textwidth} p{0.5\textwidth}}
+        {\Huge
+        \textbf{Jason Ngo}}
 
-    {\large
-    Software Developer}
+        {\large
+        Software Developer}
+    \end{tabular}
 
     {\small%
         \renewcommand{\arraystretch}{1.5}
-        \begin{tabular}{p{0.08\linewidth} p{0.2\linewidth} p{0.15\linewidth} p{0.45\linewidth}}
+        \begin{tabular}{p{0.08\textwidth} p{0.2\textwidth} p{0.15\textwidth} p{0.45\textwidth}}
             \\
             \textbf{Address} & 3224 52 Ave NW & \textbf{GitHub} & github.com/Green-Avocado \\
             & Calgary, AB & \textbf{StackOverflow} & stackoverflow.com/users/13528169/green-avocado \\
@@ -46,7 +50,7 @@
 
     \section*{Skills Summary}
 
-        \rule{\linewidth}{0.2pt}
+        \rule{\textwidth}{0.2pt}
 
         \subsection*{Full-stack development}
 
@@ -55,7 +59,7 @@
         Used a variety of technologies to create dynamic web content.
 
         \begin{center}
-        \begin{tabular}{p{0.22\linewidth} p{0.22\linewidth} p{0.22\linewidth} p{0.22\linewidth}}
+        \begin{tabular}{p{0.22\textwidth} p{0.22\textwidth} p{0.22\textwidth} p{0.22\textwidth}}
             HTML & CSS & Javascript & NodeJs \\
             PHP & Python & C++ & MySQL \\
             Firebase & Firestore & NGINX & Express \\
@@ -68,7 +72,7 @@
         When possible, I tend to focus on creating well-structured, efficient programs.
 
         \begin{center}
-        \begin{tabular}{p{0.22\linewidth} p{0.22\linewidth} p{0.22\linewidth} p{0.22\linewidth}}
+        \begin{tabular}{p{0.22\textwidth} p{0.22\textwidth} p{0.22\textwidth} p{0.22\textwidth}}
             C & C++ & C\# & Python \\
             Bash &&&\\
         \end{tabular}
@@ -79,7 +83,7 @@
         Able to use a variety of typesetting programs and word processors to produce detailed technical documentation.
 
         \begin{center}
-        \begin{tabular}{p{0.22\linewidth} p{0.22\linewidth} p{0.22\linewidth} p{0.22\linewidth}}
+        \begin{tabular}{p{0.22\textwidth} p{0.22\textwidth} p{0.22\textwidth} p{0.22\textwidth}}
             LaTeX & Microsoft Office & Libre Office & Google Drive \\
         \end{tabular}
         \end{center}
@@ -89,7 +93,7 @@
         I have a good understanding of how memory is structured in both systems.
 
         \begin{center}
-        \begin{tabular}{p{0.22\linewidth} p{0.22\linewidth} p{0.22\linewidth} p{0.22\linewidth}}
+        \begin{tabular}{p{0.22\textwidth} p{0.22\textwidth} p{0.22\textwidth} p{0.22\textwidth}}
             GDB & Radare2 &&\\
         \end{tabular}
         \end{center}
@@ -99,7 +103,7 @@
         I make use of and contribute to open source projects through GitHub.
 
         \begin{center}
-        \begin{tabular}{p{0.22\linewidth} p{0.22\linewidth} p{0.22\linewidth} p{0.22\linewidth}}
+        \begin{tabular}{p{0.22\textwidth} p{0.22\textwidth} p{0.22\textwidth} p{0.22\textwidth}}
             Git & Subversion &&\\
         \end{tabular}
         \end{center}
@@ -111,7 +115,7 @@
         Experience in operating a Linux server.
 
         \begin{center}
-        \begin{tabular}{p{0.22\linewidth} p{0.22\linewidth} p{0.22\linewidth} p{0.22\linewidth}}
+        \begin{tabular}{p{0.22\textwidth} p{0.22\textwidth} p{0.22\textwidth} p{0.22\textwidth}}
             Debian and derivatives & Arch and derivatives &&\\
         \end{tabular}
         \end{center}
@@ -121,7 +125,7 @@
         I am familiar with the different workflows involved in the use of each of these programs.
 
         \begin{center}
-        \begin{tabular}{p{0.22\linewidth} p{0.22\linewidth} p{0.22\linewidth} p{0.22\linewidth}}
+        \begin{tabular}{p{0.22\textwidth} p{0.22\textwidth} p{0.22\textwidth} p{0.22\textwidth}}
             Visual Studio & Notepad++ & Vim & Atom \\
             GCC & G++ & Makefile & CMake \\
         \end{tabular}
@@ -131,7 +135,7 @@
 
         \horizontalLine
 
-        \begin{tabular}{p{0.2\linewidth} p{0.7\linewidth}} 
+        \begin{tabular}{p{0.2\textwidth} p{0.7\textwidth}} 
             \textbf{2020/04 - Present} & \large\textbf{Freelance Software Developer} \\
             & Worked individually or in a small team to develop desktop applications and web applications according to client specifications. \\
             \\
@@ -144,7 +148,7 @@
 
         \horizontalLine
 
-        \begin{tabular}{p{0.2\linewidth} p{0.7\linewidth}} 
+        \begin{tabular}{p{0.2\textwidth} p{0.7\textwidth}} 
             \textbf{2020/09 - 2024/04} & \large\textbf{Bachelor of Science} \\
             (Anticipated) & \emph{University of British Columbia, Vancouver, BC} \\
             \\
@@ -159,7 +163,7 @@
 
         \horizontalLine
 
-        \begin{tabular}{p{0.2\linewidth} p{0.7\linewidth}} 
+        \begin{tabular}{p{0.2\textwidth} p{0.7\textwidth}} 
             \textbf{2018/02 - 2020/02} & \large\textbf{Volunteer Churchill} \\
             & \emph{Sir Winston Churchill High School, Calgary, AB} \\
             & Participated in a variety of community-oriented projects as a volunteer. \\
@@ -174,7 +178,7 @@
 
         \horizontalLine
 
-        \begin{tabular}{p{0.2\linewidth} p{0.7\linewidth}} 
+        \begin{tabular}{p{0.2\textwidth} p{0.7\textwidth}} 
             \textbf{2019/09 - Present} & \large\textbf{CTF Events} \\
             & \emph{https://ctftime.org/} \\
             & Wrote scripts to automate interactions with a server to solve challenges under time constraints.
@@ -191,7 +195,7 @@
 
         \horizontalLine
 
-        \begin{tabular}{p{0.2\linewidth} p{0.7\linewidth}} 
+        \begin{tabular}{p{0.2\textwidth} p{0.7\textwidth}} 
             \textbf{2020/03} & \large\textbf{Vex Alberta Provincial Tournament - Think Award} \\
             & \emph{4414 Crowchild Trail SW, Calgary, AB} \\
             & Awarded for innovative, well written code.
@@ -208,7 +212,7 @@
 
         \horizontalLine
 
-        \begin{tabular}{p{0.2\linewidth} p{0.7\linewidth}} 
+        \begin{tabular}{p{0.2\textwidth} p{0.7\textwidth}} 
             \textbf{2020/06 - Present} & \large\textbf{Personal Web Server} \\
             & \emph{https://github.com/Green-Avocado/linode-basic-site} \\
             & Simple webserver running NGINX and NodeJs on Arch Linux. \\
