@@ -2,6 +2,13 @@
 
 \usepackage[margin=1in]{geometry}
 
+\renewcommand*\familydefault{\sfdefault}
+\usepackage[T1]{fontenc}
+
+\usepackage{xcolor}
+\usepackage{sectsty}
+    \sectionfont{\color{cyan}}
+
 \usepackage{array}
 
 \usepackage{enumitem}
@@ -9,16 +16,17 @@
 
 \usepackage{titlesec}
     \titlespacing*{\section}
-        {0pt}{1ex}{0pt}
+        {0pt}{1.2ex}{0pt}
 
     \titlespacing*{\subsection}
-        {0pt}{1ex}{0ex}
+        {0pt}{0.2ex}{0ex}
 
 \setlength{\parindent}{0pt}
 
 \newcommand{\horizontalLine}{%
-    \rule{\textwidth}{0.2pt}
-    \vspace{1ex}
+    {\color{cyan}
+    \rule{\textwidth}{1pt}
+    \vspace{-1pt}}
 }
 
 \begin{document}
@@ -38,9 +46,10 @@
             \\
         \end{tabular}
     }
+
     \section*{Skills Summary}
 
-        \rule{\textwidth}{0.2pt}
+        \horizontalLine
 
         \subsection*{Full-stack development}
 
