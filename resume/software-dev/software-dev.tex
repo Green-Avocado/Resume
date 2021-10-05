@@ -1,6 +1,6 @@
 \documentclass[letterpaper]{article}
 
-\usepackage[margin=1in]{geometry}
+\usepackage[margin=0.5in]{geometry}
 
 \renewcommand*\familydefault{\sfdefault}
 \usepackage[T1]{fontenc}
@@ -12,18 +12,22 @@
 \usepackage{array}
 
 \usepackage{enumitem}
-    \setlist[itemize]{noitemsep, topsep=0pt}
+    \setlist[itemize]{noitemsep, topsep=-1ex}
 
 \usepackage{titlesec}
     \titlespacing*{\section}
-        {0pt}{5ex}{0pt}
+        {0pt}{4pt}{0pt}
+
+\pagenumbering{gobble}
 
 \setlength{\parindent}{0pt}
+
+\renewcommand{\arraystretch}{0.6}
 
 \newcommand{\horizontalLine}{%
     {\color{cyan}
     \rule{\textwidth}{1pt}
-    \vspace{-1pt}}
+    \vspace{-1ex}}
 }
 
 \begin{document}
@@ -35,7 +39,6 @@
     Computer Science Major + Software Developer}
 
     {\small%
-        \renewcommand{\arraystretch}{1.5}
         \begin{tabular}{p{0.08\textwidth} p{0.2\textwidth} p{0.15\textwidth} p{0.45\textwidth}}
             \\
             \textbf{Mobile} & +1 587-890-5411 & \textbf{GitHub} & github.com/Green-Avocado \\
@@ -49,16 +52,23 @@
 
         \horizontalLine
 
-        \begin{tabular}{p{0.2\textwidth} l l l l l l l l}
+        \begin{tabular}{p{0.2\textwidth}
+            p{0.1\textwidth}
+            p{0.1\textwidth}
+            p{0.1\textwidth}
+            p{0.1\textwidth}
+            p{0.1\textwidth}
+            p{0.1\textwidth}
+            }
             \textbf{Languages} &
-                C & C++ & C\# & Java & Python \\
+                Assembly & C & C++ & C\# & Java & Python \\
                 \\
             \textbf{Technologies} &
-                Git & NGINX & Firebase & MySQL \\
+                Git & NGINX & Firebase & MySQL & Linux \\
                 \\
         \end{tabular}
 
-    \section*{Work Experience}
+    \section*{Experience}
 
         \horizontalLine
 
@@ -70,15 +80,6 @@
                 \item Produced detailed technical documentation.
             \end{itemize}
             \\
-            \textbf{2016/06} & \large\textbf{Calgary Stampede Work Experience Program} \\
-            & \emph{Boys and Girls Clubs of Calgary, Calgary, AB} \\
-        \end{tabular}
-
-    \section*{Activities}
-
-        \horizontalLine
-
-        \begin{tabular}{p{0.2\textwidth} p{0.7\textwidth}} 
             \textbf{2019/09 - Present} & \large\textbf{CTF Events} \\
             & \emph{https://blog.jasonn.dev/ctf} \\
             & \begin{itemize}
@@ -118,20 +119,6 @@
             \textbf{2020/07 - Present} & \large\textbf{Hackathons} \\
             & \emph{https://devpost.com/Green-Avocado} \\
             & Working collaboratively to create and implement unique ideas for hackathon events. \\
-            \\
-        \end{tabular}
-
-        \begin{tabular}{p{0.2\textwidth} p{0.7\textwidth}} 
-            \textbf{2020/06 - Present} & \large\textbf{Personal Web Server} \\
-            & \emph{https://github.com/Green-Avocado/website.git} \\
-            & Simple webserver running NGINX and NodeJs on an Arch Linux server. \\
-            \\
-        \end{tabular}
-
-        \begin{tabular}{p{0.2\textwidth} p{0.7\textwidth}} 
-            \textbf{2020/06 - Present} & \large\textbf{CTF Writeups} \\
-            & \emph{https://github.com/Green-Avocado/CTF.git} \\
-            & Documentation of attempts at CTF challenges and in-depth explanations of solutions. \\
             \\
         \end{tabular}
 
