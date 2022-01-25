@@ -44,23 +44,23 @@ Technologies:
 - Wrote scripts to modify autonomous program files.
 
 # Projects
-2020/07 - Present Hackathons
+2020/07 - Present: Hackathons
 - https://devpost.com/Green-Avocado
 - Working collaboratively to create and implement unique ideas for hackathon events.
 
-2021/09 - 2021/12 EasyRop
+2021/09 - 2021/12: EasyRop
 - https://github.com/Green-Avocado/EasyROP
 - Used object-oriented design to create an interactive program for binary exploitation.
 
-2021/03 Etwahl
+2021/03: Etwahl
 - https://github.com/Green-Avocado/Etwahl.git
 - C++ program for linking MIDI signals to keystrokes on Windows and Linux.
 
 # Awards
-- 2022/01 CyberSci Vancouver Regionals - First Place
-- 2020/03 Vex Alberta Provincial Tournament - Think Award
-- 2019/04 U of C Science Engineering and Technology Challenge - First Place
+- 2022/01: CyberSci Vancouver Regionals - First Place
+- 2020/03: Vex Alberta Provincial Tournament - Think Award
+- 2019/04: U of C Science Engineering and Technology Challenge - First Place
 
 # Education
-2020/09 - 2024/04 Bachelor of Science, Major in Computer Science
+2020/09 - 2024/04: Bachelor of Science, Major in Computer Science
 - University of British Columbia, Vancouver, BC
