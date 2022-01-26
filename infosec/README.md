@@ -1,5 +1,6 @@
 # Jason Ngo
-Computer Science Major + Software Developer
+- Computer Science Major @ UBC
+- CTF Player @ Maple Bacon
 
 # Contact Info
 - Mobile: +1 587-890-5411
@@ -10,21 +11,14 @@ Computer Science Major + Software Developer
 - LinkedIn: linkedin.com/in/jasonn-dev
 
 # Skills Summary
-Languages:
-- Rust
-- Assembly
-- C
-- C++
-- Java
-- Python
+Binary Exploitation:
+- Buffer Overflow
+- Format String Exploits
+- Return-Oriented Programming
 
-Technologies: 
-- Linux
-- Git
-- Docker
-- NGINX
-- Firebase
-- MySQL
+Web Security:
+- SQL Injection
+- Cross-Site Scripting
 
 # Experience
 2020/04 - Present: Freelance Software Developer
@@ -44,17 +38,13 @@ Technologies:
 - Wrote scripts to modify autonomous program files.
 
 # Projects
-2020/07 - Present: Hackathons
-- https://devpost.com/Green-Avocado
-- Working collaboratively to create and implement unique ideas for hackathon events.
+2021/05 - Present: pwndocker
+- https://github.com/Green-Avocado/pwndocker
+- An exploit-development tool designed for CTF challenges with a non-native glibc.
 
 2021/09 - 2021/12: EasyRop
 - https://github.com/Green-Avocado/EasyROP
 - Used object-oriented design to create an interactive program for binary exploitation.
-
-2021/03: Etwahl
-- https://github.com/Green-Avocado/Etwahl.git
-- C++ program for linking MIDI signals to keystrokes on Windows and Linux.
 
 # Awards
 - 2022/01: CyberSci Vancouver Regionals - First Place
