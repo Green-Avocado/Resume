@@ -42,7 +42,7 @@ Web Security:
 - https://github.com/Green-Avocado/pwndocker
 - An exploit-development tool designed for CTF challenges with a non-native glibc.
 
-2021/09 - 2021/12: EasyRop
+2021/09 - 2021/12: EasyROP
 - https://github.com/Green-Avocado/EasyROP
 - Used object-oriented design to create an interactive program for binary exploitation.
 

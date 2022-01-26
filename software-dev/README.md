@@ -48,7 +48,7 @@ Technologies:
 - https://devpost.com/Green-Avocado
 - Working collaboratively to create and implement unique ideas for hackathon events.
 
-2021/09 - 2021/12: EasyRop
+2021/09 - 2021/12: EasyROP
 - https://github.com/Green-Avocado/EasyROP
 - Used object-oriented design to create an interactive program for binary exploitation.
 
