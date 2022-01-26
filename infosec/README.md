@@ -30,6 +30,7 @@ Web Security:
 - Wrote scripts to solve challenges under pressure.
 - Reversed engineered stripped binary programs.
 - Identified and exploited vulnerabilities in applications.
+- Writeups at https://github.com/Green-Avocado/CTF
 
 2017/09 - 2020/02: Vex Robotics Club
 - Wrote programs which interacted with the Vex API to relay instructions.
