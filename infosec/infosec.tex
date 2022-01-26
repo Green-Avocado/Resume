@@ -7,7 +7,7 @@
 
 \usepackage{xcolor}
 \usepackage{sectsty}
-    \sectionfont{\color{cyan}}
+    \sectionfont{\color{red}}
 
 \usepackage{array}
 
@@ -16,16 +16,16 @@
 
 \usepackage{titlesec}
     \titlespacing*{\section}
-        {0pt}{4pt}{0pt}
+        {0pt}{3pt}{0pt}
 
 \pagenumbering{gobble}
 
 \setlength{\parindent}{0pt}
 
-\renewcommand{\arraystretch}{0.6}
+\renewcommand{\arraystretch}{0.4}
 
 \newcommand{\horizontalLine}{%
-    {\color{cyan}
+    {\color{red}
     \rule{\textwidth}{1pt}
     \vspace{-1ex}}
 }
@@ -58,13 +58,24 @@
         \horizontalLine
 
         \begin{tabular}{p{0.2\textwidth}
-            p{0.1\textwidth}
-            p{0.1\textwidth}
-            p{0.1\textwidth}
-            p{0.1\textwidth}
-            p{0.1\textwidth}
-            p{0.1\textwidth}
-            }
+                        p{0.2\textwidth}
+                        p{0.2\textwidth}
+                        p{0.25\textwidth}}
+            \textbf{Binary Exploitation} &
+                Buffer-Overflow & Format-String Exploits & Return-Oriented Programming \\
+                \\
+            \textbf{Web Security} &
+                SQL Injection & Cross-Site Scripting \\
+                \\
+        \end{tabular}
+
+        \begin{tabular}{p{0.2\textwidth}
+                        p{0.1\textwidth}
+                        p{0.1\textwidth}
+                        p{0.1\textwidth}
+                        p{0.1\textwidth}
+                        p{0.1\textwidth}
+                        p{0.1\textwidth}}
             \textbf{Languages} &
                 Rust & Assembly & C & C++ & Java & Python \\
                 \\
