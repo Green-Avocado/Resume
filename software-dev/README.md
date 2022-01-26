@@ -53,7 +53,7 @@ Technologies:
 - Used object-oriented design to create an interactive program for binary exploitation.
 
 2021/03: Etwahl
-- https://github.com/Green-Avocado/Etwahl.git
+- https://github.com/Green-Avocado/Etwahl
 - C++ program for linking MIDI signals to keystrokes on Windows and Linux.
 
 # Awards
