@@ -17,7 +17,7 @@
 
 \usepackage{titlesec}
     \titlespacing*{\section}
-        {0pt}{0pt}{0pt}
+        {0pt}{0pt}{-6pt}
 
 \pagenumbering{gobble}
 
@@ -25,11 +25,10 @@
 
 \renewcommand{\arraystretch}{0.4}
 
-\newcommand{\horizontalLine}{%
-    {\color{cyan}
-    \rule{\textwidth}{1pt}
-    \vspace{-1ex}}
-}
+\newcommand{\sect}[1]{\section*{#1}
+                        {\color{cyan}
+                        \rule{\textwidth}{1pt}
+                        \vspace{-1ex}}}
 
 \begin{document}
     \includegraphics[width=\textwidth]{ScienceCo-opHeader_2020.png}
@@ -39,7 +38,7 @@
 
     \vspace{1ex}
     {\large
-    Computer Science Major + Software Developer}
+    Computer Science Major @ UBC}
 
     {\small%
         \begin{tabular}{p{0.08\textwidth} p{0.2\textwidth} p{0.15\textwidth} p{0.45\textwidth}}
@@ -54,9 +53,7 @@
         \end{tabular}
     }
 
-    \section*{Skills Summary}
-
-        \horizontalLine
+    \sect{Skills Summary}
 
         \begin{tabular}{p{0.2\textwidth}
                         p{0.1\textwidth}
@@ -73,18 +70,19 @@
                 \\
         \end{tabular}
 
-    \section*{Experience}
-
-        \horizontalLine
+    \sect{Work Experience}
 
         \begin{tabular}{p{0.2\textwidth} p{0.7\textwidth}} 
-            \textbf{2020/04 - Present} & \large\textbf{Freelance Software Development and Data Entry} \\
+            \textbf{2020/04 - Present} & \large\textbf{Freelance Software Development} \\
             & \begin{itemize}
                 \item Worked individually or with a small team.
                 \item Developed full-stack applications with detailed documentation.
-                \item Used tools to collect and organise information from the internet.
             \end{itemize}
-            \\
+        \end{tabular}
+
+    \sect{Technical Extracurriculars}
+
+        \begin{tabular}{p{0.2\textwidth} p{0.7\textwidth}} 
             \textbf{2019/09 - Present} & \large\textbf{CTF Competitions} \\
             & \emph{https://blog.jasonn.dev/ctf} \\
             & \begin{itemize}
@@ -103,9 +101,7 @@
             \end{itemize}
         \end{tabular}
 
-    \section*{Projects}
-
-        \horizontalLine
+    \sect{Hackathons}
 
         \begin{tabular}{p{0.2\textwidth} p{0.7\textwidth}} 
             \textbf{2020/07 - Present} & \large\textbf{Hackathons} \\
@@ -113,6 +109,8 @@
             & Working collaboratively to create and implement unique ideas for hackathon events. \\
             \\
         \end{tabular}
+
+    \sect{Personal Projects}
 
         \begin{tabular}{p{0.2\textwidth} p{0.7\textwidth}} 
             \textbf{2021/09 - 2021/12} & \large\textbf{EasyROP} \\
@@ -128,9 +126,7 @@
             \\
         \end{tabular}
 
-    \section*{Awards}
-
-        \horizontalLine
+    \sect{Awards}
 
         \begin{tabular}{p{0.2\textwidth} p{0.7\textwidth}} 
             \textbf{2022/01} & \textbf{CyberSci Vancouver Regionals - First Place} \\
@@ -141,9 +137,7 @@
             \\
         \end{tabular}
 
-    \section*{Education}
-
-        \horizontalLine
+    \sect{Education}
 
         \begin{tabular}{p{0.2\textwidth} p{0.7\textwidth}} 
             \textbf{2020/09 - 2024/04} & \large\textbf{Bachelor of Science, Major in Computer Science} \\
