@@ -6,7 +6,10 @@
 \renewcommand*\familydefault{\sfdefault}
 \usepackage[T1]{fontenc}
 
-\usepackage{xcolor}
+\usepackage[dvipsnames]{xcolor}
+\definecolor{ubcblue}{RGB}{0,10,62}
+\definecolor{ubclightblue}{RGB}{171,223,234}
+
 \usepackage{sectsty}
     \sectionfont{\color{cyan}}
 
@@ -31,7 +34,22 @@
                         \vspace{-1ex}}}
 
 \begin{document}
-    \includegraphics[width=\textwidth]{ScienceCo-opHeader_2020.png}
+    \begin{flushright}
+        \includegraphics[width=0.5\textwidth]{ScienceCo-opLogo_UBC_H.eps}
+    \end{flushright}
+
+    \vspace{-3ex}
+    \begin{minipage}{\dimexpr(\textwidth-16ex)}
+        \begin{flushright}
+        {\color{ubclightblue}\rule{\textwidth}{0.5pt}}
+
+        {\small\color{ubcblue}
+          T: 604.822.9677
+        | F: 604.822.9677
+        | science.coop@ubc.ca
+        | www.sciencecoop.ubc.ca}
+        \end{flushright}
+    \end{minipage}
 
     {\Huge
     \textbf{Jason Ngo}}
