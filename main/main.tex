@@ -20,18 +20,33 @@
 
 \usepackage{titlesec}
     \titlespacing*{\section}
-        {0pt}{-2pt}{-8pt}
+        {0pt}{0pt}{-2pt}
 
 \pagenumbering{gobble}
 
 \setlength{\parindent}{0pt}
-
 \renewcommand{\arraystretch}{0.1}
 
 \newcommand{\sect}[1]{\section*{#1}
                         {\color{cyan}
                         \rule{\textwidth}{1pt}
                         \vspace{-1ex}}}
+
+\newcommand{\secondpage}{\pagebreak
+                            {\small
+                                +1 587-890-5411
+                                \hfill
+                                work@jasonn.dev
+                                \hfill
+                                github.com/Green-Avocado
+                                \hfill
+                                www.jasonn.dev
+                            }
+                            \vspace{-4pt}
+
+                            \rule{\textwidth}{0.1pt}
+
+                            \vspace{0.2in}}
 
 \begin{document}
     \begin{flushright}
@@ -65,6 +80,8 @@
     | www.jasonn.dev
     }
     \vspace{1ex}
+
+    \setlength{\parskip}{-4pt}
 
     \sect{Skills Summary}
 
@@ -163,12 +180,12 @@
             \textbf{2022/01} & \textbf{Language Exchange} \\
             & \emph{https://github.com/Green-Avocado/Language-Exchange} \\
             & \begin{itemize}
-                \item In a team of 4, created a website using React and NodeJS for connecting language
-                    students with complementary strengths and goals.
-                \item Used Google Firebase to set up a database and user authentication, allowing users to
-                    log in using their existing Google accounts.
-                \item Stored user data in the Firebase real-time database, which could be queried and
-                    filtered to match users according to their learning goals.
+                \item In a team of 4, created a website using React and NodeJS for helping language
+                    students connect.
+                \item Used Google Firebase to set up authentication, allowing users to log in using
+                    existing Google accounts.
+                \item Used Google Firebase realtime database to store user data and match users according 
+                    to their goals.
             \end{itemize}
         \end{tabular}
 
@@ -183,22 +200,6 @@
                     of votes for each topic.
             \end{itemize}
         \end{tabular}
-
-    \pagebreak
-    {\small
-        +1 587-890-5411
-        \hfill
-        work@jasonn.dev
-        \hfill
-        github.com/Green-Avocado
-        \hfill
-        www.jasonn.dev
-    }
-    \vspace{-8pt}
-
-    \rule{\textwidth}{0.1pt}
-
-    \vspace{0.2in}
 
         \begin{tabular}{p{0.18\textwidth} p{0.78\textwidth}}
             \textbf{2020/08} & \textbf{Study Tinder} \\
@@ -216,20 +217,22 @@
             \textbf{2020/08} & \textbf{BikePath} \\
             & \emph{https://devpost.com/software/bikepath-dkpstx} \\
             & \begin{itemize}
-                \item In a team of 3, created a website to help users find alternative locations that
-                    would permit eco-friendly alternatives to driving, such as walking or biking.
+                \item In a team of 3, created a website to find locations that encourage eco-friendly
+                    alternatives to driving.
                 \item Used the Google Maps API to render a map view of selected locations on the webpage.
                 \item Used Python to interact with the Google Places API to retrieve, parse, and
                     interpret data.
             \end{itemize}
         \end{tabular}
 
+    \secondpage
+
         \begin{tabular}{p{0.18\textwidth} p{0.78\textwidth}}
             \textbf{2020/08} & \textbf{COVID Wait} \\
             & \emph{https://devpost.com/software/covid-wait} \\
             & \begin{itemize}
-                \item In a team of 5, created a website to help users avoid highly populated areas and
-                    reduce the risk of exposure to COVID-19.
+                \item In a team of 5, created a website to avoid populated areas to reduce the risk of
+                    exposure to COVID-19.
                 \item Used Python to develop a server-side application to retrieve data from the Google
                     Maps API.
                 \item Implemented a RESTful API to allow clients to query data from the server.
@@ -243,8 +246,8 @@
             & \emph{https://github.com/Green-Avocado/pwndocker} \\
             & \begin{itemize}
                 \item Wrote a minimal program in C to create symbolic links without standard libraries.
-                \item Used Docker and gdbserver to create an environment for debugging exploits against
-                    applications using different versions of the GNU C Library.
+                \item Used Docker to create an environment for debugging exploits under different
+                    versions of Glibc.
                 \item The project became a go-to tool for CTF challenges involving binary exploitation.
             \end{itemize}
         \end{tabular}
@@ -253,8 +256,8 @@
             \textbf{2022/02} & \textbf{BBY Stealer Malware Analysis} \\
             & \emph{https://github.com/Green-Avocado/bbystealer-malware-analysis} \\
             & \begin{itemize}
-                \item Performed dynamic analysis using Wireshark to identify external connections and
-                    Windows filesystem auditing to identify files read or modified.
+                \item Used Wireshark and Windows filesystem auditing to identify connections and
+                    filesystem access.
                 \item Reverse engineered JavaScript code that was obfuscated and packaged as a Windows
                     executable.
                 \item Helped victims with incident response by identifying compromised credentials and
@@ -269,8 +272,8 @@
                 \item Wrote challenges in C with intentional vulnerabilities to teach binary exploitation
                     techniques.
                 \item Used Docker to containerize challenges so they could be deployed through Kubernetes.
-                \item Helped beginners by running demonstrations at a workshop and answering questions
-                    related to binary exploitation and reverse engineering.
+                \item Helped run a workshop and answered questions about binary exploitation and reverse
+                    engineering.
             \end{itemize}
         \end{tabular}
 
