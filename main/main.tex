@@ -9,9 +9,10 @@
 \usepackage[dvipsnames]{xcolor}
 \definecolor{ubcblue}{RGB}{0,10,62}
 \definecolor{ubclightblue}{RGB}{171,223,234}
+\newcommand{\sectcolor}{cyan}
 
 \usepackage{sectsty}
-    \sectionfont{\color{cyan}}
+    \sectionfont{\color{\sectcolor}}
 
 \usepackage{array}
 
@@ -28,7 +29,7 @@
 \renewcommand{\arraystretch}{0.1}
 
 \newcommand{\sect}[1]{\section*{#1}
-                        {\color{cyan}
+                        {\color{\sectcolor}
                         \rule{\textwidth}{1pt}
                         \vspace{-1ex}}}
 
