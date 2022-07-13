@@ -21,7 +21,7 @@
 
 \usepackage{titlesec}
     \titlespacing*{\section}
-        {0pt}{-4pt}{-6pt}
+        {0pt}{-6pt}{-6pt}
 
 \pagenumbering{gobble}
 
@@ -31,7 +31,7 @@
 \newcommand{\sect}[1]{\section*{#1}
                         {\color{\sectcolor}
                         \rule{\textwidth}{1pt}
-                        \vspace{-1ex}}}
+                        \vspace{-7pt}}}
 
 \newcommand{\secondpage}{\pagebreak
                             {\small
@@ -131,6 +131,17 @@
     \sect{Work Experience}
 
         \begin{tabular}{p{0.18\textwidth} p{0.78\textwidth}}
+            \textbf{2022/05 - 2022/08} & \textbf{Undergraduate Academic Assistant} \\
+            & \emph{University of British Columbia} \\
+            & \begin{itemize}
+                \item Discovered and patched vulnerabilities in services involving arbitrary code
+                    execution and XML injection.
+                \item Used Python to automate student evaluation on a variety of topics using randomized
+                    questions.
+            \end{itemize}
+        \end{tabular}
+
+        \begin{tabular}{p{0.18\textwidth} p{0.78\textwidth}}
             \textbf{2020/04 - 2022/02} & \textbf{Freelance Software Development} \\
             & \emph{Commissioned by clients for various projects. Some examples include:} \\
             & \begin{itemize}
@@ -152,11 +163,9 @@
             \textbf{2019/09 - Present} & \textbf{Capture The Flag Competitions} \\
             & \emph{https://github.com/Green-Avocado/CTF} \\
             & \begin{itemize}
-                \item Reverse engineered binaries without symbols using Ghidra, Radare2, and angr.
-                \item Performed dynamic analysis and debugged exploits using GDB.
+                \item Reverse engineered binaries using static and dynamic analysis techniques.
                 \item Identified vulnerabilities in binary applications and web services.
-                \item Defeated common exploit mitigations such as position independent executables,
-                    address-space layout randomization, stack canaries, and relocation read-only.
+                \item Defeated common exploit mitigations such as PIE, ASLR, canaries, and RELRO.
                 \item Created writeups to explain vulnerabilities and exploit techniques used in each
                     challenge.
             \end{itemize}
@@ -184,10 +193,8 @@
             & \begin{itemize}
                 \item In a team of 4, created a website using React and NodeJS for helping language
                     students connect.
-                \item Used Google Firebase to set up authentication, allowing users to log in using
-                    existing Google accounts.
-                \item Used Google Firebase realtime database to store user data and match users according 
-                    to their goals.
+                \item Used Google Firebase to set up authentication, store user data, match users
+                    according to their goals.
             \end{itemize}
         \end{tabular}
 
@@ -244,6 +251,17 @@
     \sect{Cybersecurity Projects}
 
         \begin{tabular}{p{0.18\textwidth} p{0.78\textwidth}}
+            \textbf{2022/05 - 2022/07} & \textbf{No Flag 4 U} \\
+            & \emph{https://github.com/Green-Avocado/No-Flag-4-U} \\
+            & \begin{itemize}
+                \item Created a dynamic shared library using Rust to hooks standard library functions.
+                \item Mitigates common vulnerabilities including buffer overflow, format string, and
+                    use-after-free.
+                \item Logs function calls by sending data to an external process using a TCP stream.
+            \end{itemize}
+        \end{tabular}
+
+        \begin{tabular}{p{0.18\textwidth} p{0.78\textwidth}}
             \textbf{2021/03 - Present} & \textbf{pwndocker} \\
             & \emph{https://github.com/Green-Avocado/pwndocker} \\
             & \begin{itemize}
@@ -274,8 +292,7 @@
                 \item Wrote challenges in C with intentional vulnerabilities to teach binary exploitation
                     techniques.
                 \item Used Docker to containerize challenges so they could be deployed using Kubernetes.
-                \item Helped run a workshop and answered questions about binary exploitation and reverse
-                    engineering.
+                \item Ran a workshop to teach binary exploitation and reverse engineering.
             \end{itemize}
         \end{tabular}
 
@@ -302,9 +319,7 @@
                     engine.
                 \item Used NGINX to secure connections using TLS and forward HTTP requests to internal
                     services.
-                \item Used Docker to containerize services, allowing each to be modified and restarted
-                    independently.
-                \item Tested the website and scanned for vulnerabilities using continuous integration.
+                \item Managed services using Docker and GitHub continuous integration.
             \end{itemize}
         \end{tabular}
 
@@ -319,17 +334,6 @@
                 \item Wrote documentation using markdown to explain the usage of the plugin with examples.
                 \item The plugin has been downloaded over 164 000 times by developers for programming with
                     Rust.
-            \end{itemize}
-        \end{tabular}
-
-        \begin{tabular}{p{0.18\textwidth} p{0.78\textwidth}}
-            \textbf{2021/12} & \textbf{discord-balance-tracker} \\
-            & \emph{https://github.com/Green-Avocado/discord-balance-tracker} \\
-            & \begin{itemize}
-                \item Wrote a Rust application to provide a convenient way to track balances through
-                    Discord.
-                \item Used asynchronous programming to send and receive interactions using the Discord
-                    API.
             \end{itemize}
         \end{tabular}
 
