@@ -1,0 +1,217 @@
+\documentclass[letterpaper]{article}
+
+\usepackage[margin=0.3in, top=0.1in]{geometry}
+\usepackage{graphicx}
+
+\renewcommand*\familydefault{\sfdefault}
+\usepackage[T1]{fontenc}
+
+\usepackage[dvipsnames]{xcolor}
+\definecolor{ubcblue}{RGB}{0,10,62}
+\definecolor{ubclightblue}{RGB}{171,223,234}
+\newcommand{\sectcolor}{cyan}
+
+\usepackage{sectsty}
+    \sectionfont{\color{\sectcolor}}
+
+\usepackage{array}
+
+\usepackage{enumitem}
+    \setlist[itemize]{noitemsep, topsep=0pt}
+
+\usepackage{titlesec}
+    \titlespacing*{\section}
+        {0pt}{-4pt}{-4pt}
+
+\pagenumbering{gobble}
+
+\setlength{\parindent}{0pt}
+\renewcommand{\arraystretch}{0.1}
+
+\newcommand{\sect}[1]{\section*{#1}
+                        {\color{\sectcolor}
+                        \rule{\textwidth}{1pt}
+                        \vspace{-4pt}}}
+
+\newcommand{\secondpage}{\pagebreak
+                            {\small
+                                Jason Ngo
+                                \hfill
+                                +1 587-890-5411
+                                \hfill
+                                work@jasonn.dev
+                                \hfill
+                                github.com/Green-Avocado
+                            }
+                            \vspace{-4pt}
+
+                            \rule{\textwidth}{0.1pt}
+
+                            \vspace{0.2in}}
+
+\begin{document}
+    \begin{flushright}
+        \includegraphics[width=0.3\textwidth]{ScienceCo-opLogo_UBC_H.eps}
+    \end{flushright}
+
+    \vspace{-2ex}
+    \begin{minipage}{\dimexpr(\textwidth-44pt)}
+        \begin{flushright}
+        {\color{ubclightblue}\rule{\textwidth}{0.5pt}}
+
+        {\small\color{ubcblue}
+          T: 604.822.9677
+        | F: 604.822.9677
+        | science.coop@ubc.ca
+        | www.sciencecoop.ubc.ca}
+        \end{flushright}
+    \end{minipage}
+
+    {\LARGE
+    \textbf{Jason Ngo}}
+
+    \vspace{0.5ex}
+    {Computer Science Major @ UBC}
+
+    {\small
+      +1 587-890-5411
+    | work@jasonn.dev
+    | github.com/Green-Avocado
+    }
+    \vspace{1ex}
+
+    \setlength{\parskip}{-2.5pt}
+
+    \sect{Skills Summary}
+
+        \begin{tabular}{>{\raggedleft\arraybackslash}p{0.18\textwidth}
+                        p{0.78\textwidth}}
+            \textbf{Application Security} &
+                Buffer overflow,
+                Format-string exploits,
+                Return-oriented programming,
+                Use-after-free
+                \\\\
+            \textbf{Web Security} &
+                SQL injection,
+                Cross-site scripting,
+                Template injection,
+                Local file inclusion,
+                Prototype pollution
+                \\\\
+            \textbf{Binary Analysis} &
+                Ghidra,
+                Radare2,
+                Binary Ninja,
+                GDB,
+                angr,
+                Triton
+                \\\\
+
+                \\\\\\\\\\\\\\\\
+        \end{tabular}
+
+    \sect{Work Experience}
+
+        \begin{tabular}{p{0.18\textwidth} p{0.78\textwidth}}
+            \textbf{2022/05 - 2022/08} & \textbf{Undergraduate Academic Assistant} \\
+            & \emph{University of British Columbia} \\
+            & \begin{itemize}
+                \item Discovered and patched vulnerabilities in services involving arbitrary code
+                    execution and XML injection.
+                \item Used Python to automate student evaluation on a variety of topics using randomized
+                    questions.
+            \end{itemize}
+        \end{tabular}
+
+        \begin{tabular}{p{0.18\textwidth} p{0.78\textwidth}}
+            \textbf{2020/04 - 2022/02} & \textbf{Freelance Software Development} \\
+            & \emph{Commissioned by clients for various projects. Some examples include:} \\
+            & \begin{itemize}
+                \item \underline{Transactions database} ---
+                    Designed proof-of-concepts for database solutions using Firebase Realtime Database,
+                    MySQL, and Google Drive APIs.
+                \item \underline{Mosque timetable} ---
+                    Developed a web application to read data from a CSV file and display prayer times
+                    using HTML, CSS, and JavaScript.
+                \item \underline{covidping.com} ---
+                    Wrote scripts to load current COVID-19 statistics into Google Sheets and send emails
+                    to a list of subscribers for notifying users of COVID-19 statistics in their state.
+            \end{itemize}
+        \end{tabular}
+
+    \sect{Extracurriculars}
+
+        \begin{tabular}{p{0.18\textwidth} p{0.78\textwidth}}
+            \textbf{2019/09 - Present} & \textbf{Capture The Flag Competitions} \\
+            & \emph{https://github.com/Green-Avocado/CTF} \\
+            & \begin{itemize}
+                \item Reverse engineered binaries using static and dynamic analysis techniques.
+                \item Identified vulnerabilities in binary applications and web services.
+                \item Defeated common exploit mitigations such as PIE, ASLR, canaries, and RELRO.
+                \item Created writeups to explain vulnerabilities and exploit techniques used in each
+                    challenge.
+            \end{itemize}
+        \end{tabular}
+
+    \sect{Projects}
+
+        \begin{tabular}{p{0.18\textwidth} p{0.78\textwidth}}
+            \textbf{2022/05 - 2022/07} & \textbf{No Flag 4 U} \\
+            & \emph{https://github.com/Green-Avocado/No-Flag-4-U} \\
+            & \begin{itemize}
+                \item Created a dynamic shared library using Rust to hooks standard library functions.
+                \item Mitigates common vulnerabilities including buffer overflow, format string, and
+                    use-after-free.
+                \item Logs function calls by sending data to an external process using a TCP stream.
+            \end{itemize}
+        \end{tabular}
+
+        \begin{tabular}{p{0.18\textwidth} p{0.78\textwidth}}
+            \textbf{2021/03 - 2022/04} & \textbf{pwndocker} \\
+            & \emph{https://github.com/Green-Avocado/pwndocker} \\
+            & \begin{itemize}
+                \item Wrote a minimal program in C to create symbolic links without standard libraries.
+                \item Used Docker to create an environment for debugging exploits under different
+                    versions of Glibc.
+                \item The project became a go-to tool for CTF challenges involving binary exploitation.
+            \end{itemize}
+        \end{tabular}
+
+        \begin{tabular}{p{0.18\textwidth} p{0.78\textwidth}}
+            \textbf{2022/02} & \textbf{BBY Stealer Malware Analysis} \\
+            & \emph{https://github.com/Green-Avocado/bbystealer-malware-analysis} \\
+            & \begin{itemize}
+                \item Used Wireshark and Windows filesystem auditing to identify connections and
+                    filesystem access.
+                \item Reverse engineered JavaScript code that was obfuscated and packaged as a Windows
+                    executable.
+                \item Helped victims with incident response by identifying compromised credentials and
+                    modified files.
+            \end{itemize}
+        \end{tabular}
+
+        \begin{tabular}{p{0.18\textwidth} p{0.78\textwidth}}
+            \textbf{2021/09 - 2021/12} & \textbf{EasyROP} \\
+            & \emph{https://github.com/Green-Avocado/EasyROP} \\
+            & \begin{itemize}
+                \item Wrote a Java program using object-oriented design to automate writing scripts for
+                    binary exploitation.
+                \item The project began as a command-line application and later included a GUI using Java
+                    Swing.
+                \item Return-oriented programming payloads could be saved as a local JSON file and
+                    reloaded.
+            \end{itemize}
+        \end{tabular}
+
+    \sect{Education}
+
+        \begin{tabular}{p{0.18\textwidth} p{0.78\textwidth}}
+            \textbf{2020/09 - 2024/04} & \large\textbf{Bachelor of Science, Major in Computer Science} \\
+            & \emph{University of British Columbia, Vancouver, BC} \\
+            \textbf{2022/04} & \large\textbf{Program Analysis for Vulnerability Research} \\
+            & \emph{Online training course offered by Vector35 and Margin Research} \\
+        \end{tabular}
+
+\end{document}
+
